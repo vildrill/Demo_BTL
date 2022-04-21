@@ -10,17 +10,16 @@ using System.Windows.Forms;
 
 namespace Demo_BTL
 {
-    public partial class QliKTX : UserControl
+    public partial class QliSV : Form
     {
-        public QliKTX()
+        public QliSV()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
-            QliSV h = new QliSV();
-            h.ShowDialog();
+
         }
     }
 }

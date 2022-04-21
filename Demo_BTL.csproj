@@ -73,17 +73,17 @@
     <Compile Include="QliKTX.Designer.cs">
       <DependentUpon>QliKTX.cs</DependentUpon>
     </Compile>
+    <Compile Include="QliSV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QliSV.Designer.cs">
+      <DependentUpon>QliSV.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThuePhong.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ThuePhong.Designer.cs">
       <DependentUpon>ThuePhong.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TimKiem.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="TimKiem.Designer.cs">
-      <DependentUpon>TimKiem.cs</DependentUpon>
     </Compile>
     <Compile Include="Trangchu.cs">
       <SubType>UserControl</SubType>
@@ -114,9 +114,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ThuePhong.resx">
       <DependentUpon>ThuePhong.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TimKiem.resx">
-      <DependentUpon>TimKiem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Trangchu.resx">
       <DependentUpon>Trangchu.cs</DependentUpon>

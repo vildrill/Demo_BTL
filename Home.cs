@@ -34,10 +34,10 @@ namespace Demo_BTL
 
         private void Btn_Timkiem_Click(object sender, EventArgs e)
         {
-            sidepanel1.Height = Btn_Timkiem.Height;
-            sidepanel1.Top = Btn_Timkiem.Top;
+            sidepanel1.Height = Btn_ThongTin.Height;
+            sidepanel1.Top = Btn_ThongTin.Top;
             sidepanel1.BackColor = Color.Teal;
-            timKiem3.BringToFront();
+            
         }
 
         private void Btn_Thuephong_Click(object sender, EventArgs e)
@@ -77,6 +77,11 @@ namespace Demo_BTL
         {
             if(thoat)
                 Application.Exit();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

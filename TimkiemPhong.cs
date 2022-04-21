@@ -10,17 +10,16 @@ using System.Windows.Forms;
 
 namespace Demo_BTL
 {
-    public partial class QliKTX : UserControl
+    public partial class TimkiemPhong : Form
     {
-        public QliKTX()
+        public TimkiemPhong()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            QliSV h = new QliSV();
-            h.ShowDialog();
+
         }
     }
 }

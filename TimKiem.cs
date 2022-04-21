@@ -10,16 +10,28 @@ using System.Windows.Forms;
 
 namespace Demo_BTL
 {
-    public partial class TimKiem : UserControl
+    public partial class Timkiem : UserControl
     {
-        public TimKiem()
+        public Timkiem()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Timkiem_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TimkiemSV a = new TimkiemSV();
+            a.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            TimkiemPhong b = new TimkiemPhong();
+            b.Show();
         }
     }
 }
