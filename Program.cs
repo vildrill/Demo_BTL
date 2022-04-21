@@ -16,7 +16,7 @@ namespace Demo_BTL
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormHome());
+            Application.Run(new Login());
         }
     }
 }
