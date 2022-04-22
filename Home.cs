@@ -34,8 +34,8 @@ namespace Demo_BTL
 
         private void Btn_Timkiem_Click(object sender, EventArgs e)
         {
-            sidepanel1.Height = Btn_ThongTin.Height;
-            sidepanel1.Top = Btn_ThongTin.Top;
+            sidepanel1.Height = Btn_TimKiem.Height;
+            sidepanel1.Top = Btn_TimKiem.Top;
             sidepanel1.BackColor = Color.Teal;
             
         }

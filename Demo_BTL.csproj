@@ -79,17 +79,53 @@
     <Compile Include="QliSV.Designer.cs">
       <DependentUpon>QliSV.cs</DependentUpon>
     </Compile>
+    <Compile Include="QliThietBi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QliThietBi.Designer.cs">
+      <DependentUpon>QliThietBi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QlyKhuNha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QlyKhuNha.Designer.cs">
+      <DependentUpon>QlyKhuNha.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThuePhong.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ThuePhong.Designer.cs">
       <DependentUpon>ThuePhong.cs</DependentUpon>
     </Compile>
+    <Compile Include="TimKiem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TimKiem.Designer.cs">
+      <DependentUpon>TimKiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimkiemPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimkiemPhong.Designer.cs">
+      <DependentUpon>TimkiemPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimkiemSV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimkiemSV.Designer.cs">
+      <DependentUpon>TimkiemSV.cs</DependentUpon>
+    </Compile>
     <Compile Include="Trangchu.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Trangchu.Designer.cs">
       <DependentUpon>Trangchu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraPhong.Designer.cs">
+      <DependentUpon>TraPhong.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
@@ -112,11 +148,32 @@
     <EmbeddedResource Include="QliKTX.resx">
       <DependentUpon>QliKTX.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="QliSV.resx">
+      <DependentUpon>QliSV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QliThietBi.resx">
+      <DependentUpon>QliThietBi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QlyKhuNha.resx">
+      <DependentUpon>QlyKhuNha.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ThuePhong.resx">
       <DependentUpon>ThuePhong.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TimKiem.resx">
+      <DependentUpon>TimKiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimkiemPhong.resx">
+      <DependentUpon>TimkiemPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimkiemSV.resx">
+      <DependentUpon>TimkiemSV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Trangchu.resx">
       <DependentUpon>Trangchu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraPhong.resx">
+      <DependentUpon>TraPhong.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

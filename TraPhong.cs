@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Demo_BTL
 {
-    public partial class QliPhong : Form
+    public partial class TraPhong : Form
     {
-        public QliPhong()
+        public TraPhong()
         {
             InitializeComponent();
         }

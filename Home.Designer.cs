@@ -34,7 +34,7 @@
             this.sidepanel1 = new System.Windows.Forms.Panel();
             this.Btn_Hopdong = new System.Windows.Forms.Button();
             this.Btn_Thuephong = new System.Windows.Forms.Button();
-            this.Btn_ThongTin = new System.Windows.Forms.Button();
+            this.Btn_TimKiem = new System.Windows.Forms.Button();
             this.Btn_Qlyktx = new System.Windows.Forms.Button();
             this.Btn_trangchu = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -43,12 +43,11 @@
             this.button4 = new System.Windows.Forms.Button();
             this.Btn_Dangxuat = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.trangchu1 = new Demo_BTL.Trangchu();
-            
             this.thuePhong2 = new Demo_BTL.ThuePhong();
             this.qliKTX2 = new Demo_BTL.QliKTX();
             this.hopDong2 = new Demo_BTL.HopDong();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -62,12 +61,12 @@
             this.panel1.Controls.Add(this.sidepanel1);
             this.panel1.Controls.Add(this.Btn_Hopdong);
             this.panel1.Controls.Add(this.Btn_Thuephong);
-            this.panel1.Controls.Add(this.Btn_ThongTin);
+            this.panel1.Controls.Add(this.Btn_TimKiem);
             this.panel1.Controls.Add(this.Btn_Qlyktx);
             this.panel1.Controls.Add(this.Btn_trangchu);
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(245, 592);
             this.panel1.TabIndex = 0;
@@ -76,7 +75,7 @@
             // 
             this.sidepanel1.BackColor = System.Drawing.Color.IndianRed;
             this.sidepanel1.Location = new System.Drawing.Point(0, 80);
-            this.sidepanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sidepanel1.Margin = new System.Windows.Forms.Padding(4);
             this.sidepanel1.Name = "sidepanel1";
             this.sidepanel1.Size = new System.Drawing.Size(13, 64);
             this.sidepanel1.TabIndex = 0;
@@ -90,7 +89,7 @@
             this.Btn_Hopdong.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Hopdong.Image")));
             this.Btn_Hopdong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Btn_Hopdong.Location = new System.Drawing.Point(9, 315);
-            this.Btn_Hopdong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_Hopdong.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Hopdong.Name = "Btn_Hopdong";
             this.Btn_Hopdong.Size = new System.Drawing.Size(231, 64);
             this.Btn_Hopdong.TabIndex = 4;
@@ -107,7 +106,7 @@
             this.Btn_Thuephong.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Thuephong.Image")));
             this.Btn_Thuephong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Btn_Thuephong.Location = new System.Drawing.Point(9, 251);
-            this.Btn_Thuephong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_Thuephong.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Thuephong.Name = "Btn_Thuephong";
             this.Btn_Thuephong.Size = new System.Drawing.Size(231, 64);
             this.Btn_Thuephong.TabIndex = 3;
@@ -115,22 +114,22 @@
             this.Btn_Thuephong.UseVisualStyleBackColor = true;
             this.Btn_Thuephong.Click += new System.EventHandler(this.Btn_Thuephong_Click);
             // 
-            // Btn_ThongTin
+            // Btn_TimKiem
             // 
-            this.Btn_ThongTin.FlatAppearance.BorderSize = 0;
-            this.Btn_ThongTin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_ThongTin.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_ThongTin.ForeColor = System.Drawing.Color.White;
-            this.Btn_ThongTin.Image = ((System.Drawing.Image)(resources.GetObject("Btn_ThongTin.Image")));
-            this.Btn_ThongTin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btn_ThongTin.Location = new System.Drawing.Point(9, 198);
-            this.Btn_ThongTin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Btn_ThongTin.Name = "Btn_ThongTin";
-            this.Btn_ThongTin.Size = new System.Drawing.Size(231, 64);
-            this.Btn_ThongTin.TabIndex = 2;
-            this.Btn_ThongTin.Text = "Thông tin";
-            this.Btn_ThongTin.UseVisualStyleBackColor = true;
-            this.Btn_ThongTin.Click += new System.EventHandler(this.Btn_Timkiem_Click);
+            this.Btn_TimKiem.FlatAppearance.BorderSize = 0;
+            this.Btn_TimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_TimKiem.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_TimKiem.ForeColor = System.Drawing.Color.White;
+            this.Btn_TimKiem.Image = ((System.Drawing.Image)(resources.GetObject("Btn_TimKiem.Image")));
+            this.Btn_TimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btn_TimKiem.Location = new System.Drawing.Point(9, 198);
+            this.Btn_TimKiem.Margin = new System.Windows.Forms.Padding(4);
+            this.Btn_TimKiem.Name = "Btn_TimKiem";
+            this.Btn_TimKiem.Size = new System.Drawing.Size(231, 64);
+            this.Btn_TimKiem.TabIndex = 2;
+            this.Btn_TimKiem.Text = "Tìm kiếm";
+            this.Btn_TimKiem.UseVisualStyleBackColor = true;
+            this.Btn_TimKiem.Click += new System.EventHandler(this.Btn_Timkiem_Click);
             // 
             // Btn_Qlyktx
             // 
@@ -141,7 +140,7 @@
             this.Btn_Qlyktx.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Qlyktx.Image")));
             this.Btn_Qlyktx.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Btn_Qlyktx.Location = new System.Drawing.Point(9, 140);
-            this.Btn_Qlyktx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_Qlyktx.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Qlyktx.Name = "Btn_Qlyktx";
             this.Btn_Qlyktx.Size = new System.Drawing.Size(231, 64);
             this.Btn_Qlyktx.TabIndex = 1;
@@ -159,7 +158,7 @@
             this.Btn_trangchu.Image = ((System.Drawing.Image)(resources.GetObject("Btn_trangchu.Image")));
             this.Btn_trangchu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Btn_trangchu.Location = new System.Drawing.Point(9, 80);
-            this.Btn_trangchu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_trangchu.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_trangchu.Name = "Btn_trangchu";
             this.Btn_trangchu.Size = new System.Drawing.Size(236, 64);
             this.Btn_trangchu.TabIndex = 0;
@@ -172,7 +171,7 @@
             this.panel2.BackColor = System.Drawing.Color.IndianRed;
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Location = new System.Drawing.Point(279, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(213, 144);
             this.panel2.TabIndex = 1;
@@ -180,7 +179,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(23, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(169, 92);
             this.pictureBox1.TabIndex = 0;
@@ -192,7 +191,7 @@
             this.panel3.Controls.Add(this.button4);
             this.panel3.Controls.Add(this.Btn_Dangxuat);
             this.panel3.Location = new System.Drawing.Point(564, 1);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(727, 78);
             this.panel3.TabIndex = 2;
@@ -206,7 +205,7 @@
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.Location = new System.Drawing.Point(23, 20);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(167, 42);
             this.button4.TabIndex = 7;
@@ -224,7 +223,7 @@
             this.Btn_Dangxuat.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Dangxuat.Image")));
             this.Btn_Dangxuat.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_Dangxuat.Location = new System.Drawing.Point(560, 14);
-            this.Btn_Dangxuat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_Dangxuat.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Dangxuat.Name = "Btn_Dangxuat";
             this.Btn_Dangxuat.Size = new System.Drawing.Size(155, 48);
             this.Btn_Dangxuat.TabIndex = 0;
@@ -236,12 +235,11 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.trangchu1);
-            
             this.panel4.Controls.Add(this.thuePhong2);
             this.panel4.Controls.Add(this.qliKTX2);
             this.panel4.Controls.Add(this.hopDong2);
             this.panel4.Location = new System.Drawing.Point(247, 140);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1043, 450);
             this.panel4.TabIndex = 3;
@@ -256,10 +254,6 @@
             this.trangchu1.Name = "trangchu1";
             this.trangchu1.Size = new System.Drawing.Size(1043, 450);
             this.trangchu1.TabIndex = 4;
-            // 
-            // timKiem3
-            // 
-            
             // 
             // thuePhong2
             // 
@@ -317,7 +311,7 @@
         private System.Windows.Forms.Panel sidepanel1;
         private System.Windows.Forms.Button Btn_Hopdong;
         private System.Windows.Forms.Button Btn_Thuephong;
-        private System.Windows.Forms.Button Btn_ThongTin;
+        private System.Windows.Forms.Button Btn_TimKiem;
         private System.Windows.Forms.Button Btn_Qlyktx;
         private System.Windows.Forms.Button Btn_trangchu;
         private System.Windows.Forms.Panel panel2;

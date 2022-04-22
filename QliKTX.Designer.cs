@@ -47,7 +47,7 @@
             this.pictureBox4.Location = new System.Drawing.Point(732, 35);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(205, 199);
+            this.pictureBox4.Size = new System.Drawing.Size(197, 199);
             this.pictureBox4.TabIndex = 2;
             this.pictureBox4.TabStop = false;
             // 
@@ -58,7 +58,7 @@
             this.pictureBox3.Location = new System.Drawing.Point(411, 35);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(205, 199);
+            this.pictureBox3.Size = new System.Drawing.Size(202, 199);
             this.pictureBox3.TabIndex = 3;
             this.pictureBox3.TabStop = false;
             // 
@@ -93,6 +93,7 @@
             this.button2.TabIndex = 5;
             this.button2.Text = "Khu /Phòng";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -103,6 +104,7 @@
             this.button3.TabIndex = 5;
             this.button3.Text = "Thiết bị";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // QliKTX
             // 

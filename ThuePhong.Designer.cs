@@ -54,8 +54,9 @@
             // 
             this.textBox7.Location = new System.Drawing.Point(160, 323);
             this.textBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox7.Multiline = true;
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(311, 22);
+            this.textBox7.Size = new System.Drawing.Size(311, 45);
             this.textBox7.TabIndex = 16;
             // 
             // txtMaphong
@@ -160,10 +161,11 @@
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Location = new System.Drawing.Point(160, 236);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(311, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(163, 22);
             this.dateTimePicker1.TabIndex = 28;
             // 
             // cbThoiHan
@@ -193,7 +195,7 @@
             // 
             // btXoa
             // 
-            this.btXoa.Location = new System.Drawing.Point(336, 378);
+            this.btXoa.Location = new System.Drawing.Point(336, 390);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(114, 31);
             this.btXoa.TabIndex = 34;
@@ -202,7 +204,7 @@
             // 
             // btSua
             // 
-            this.btSua.Location = new System.Drawing.Point(209, 378);
+            this.btSua.Location = new System.Drawing.Point(209, 390);
             this.btSua.Name = "btSua";
             this.btSua.Size = new System.Drawing.Size(114, 31);
             this.btSua.TabIndex = 33;
@@ -211,7 +213,7 @@
             // 
             // btThem
             // 
-            this.btThem.Location = new System.Drawing.Point(73, 378);
+            this.btThem.Location = new System.Drawing.Point(73, 390);
             this.btThem.Name = "btThem";
             this.btThem.Size = new System.Drawing.Size(114, 31);
             this.btThem.TabIndex = 32;
