@@ -46,94 +46,94 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Home.cs">
+    <Compile Include="Form\Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Home.Designer.cs">
+    <Compile Include="Form\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="HopDong.cs">
+    <Compile Include="Form\HopDong.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="HopDong.Designer.cs">
+    <Compile Include="Form\HopDong.Designer.cs">
       <DependentUpon>HopDong.cs</DependentUpon>
     </Compile>
     <Compile Include="KetnoiDb.cs" />
-    <Compile Include="Login.cs">
+    <Compile Include="Form\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
+    <Compile Include="Form\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QliKTX.cs">
+    <Compile Include="Form\QliKTX.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="QliKTX.Designer.cs">
+    <Compile Include="Form\QliKTX.Designer.cs">
       <DependentUpon>QliKTX.cs</DependentUpon>
     </Compile>
-    <Compile Include="QliSV.cs">
+    <Compile Include="Form\QliSV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QliSV.Designer.cs">
+    <Compile Include="Form\QliSV.Designer.cs">
       <DependentUpon>QliSV.cs</DependentUpon>
     </Compile>
-    <Compile Include="QliThietBi.cs">
+    <Compile Include="Form\QliThietBi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QliThietBi.Designer.cs">
+    <Compile Include="Form\QliThietBi.Designer.cs">
       <DependentUpon>QliThietBi.cs</DependentUpon>
     </Compile>
-    <Compile Include="QlyKhuNha.cs">
+    <Compile Include="Form\QlyKhuNha.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QlyKhuNha.Designer.cs">
+    <Compile Include="Form\QlyKhuNha.Designer.cs">
       <DependentUpon>QlyKhuNha.cs</DependentUpon>
     </Compile>
-    <Compile Include="ThuePhong.cs">
+    <Compile Include="Form\ThuePhong.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ThuePhong.Designer.cs">
+    <Compile Include="Form\ThuePhong.Designer.cs">
       <DependentUpon>ThuePhong.cs</DependentUpon>
     </Compile>
-    <Compile Include="TimKiem.cs">
+    <Compile Include="Form\TimKiem.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="TimKiem.Designer.cs">
+    <Compile Include="Form\TimKiem.Designer.cs">
       <DependentUpon>TimKiem.cs</DependentUpon>
     </Compile>
-    <Compile Include="TimkiemPhong.cs">
+    <Compile Include="Form\TimkiemPhong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TimkiemPhong.Designer.cs">
+    <Compile Include="Form\TimkiemPhong.Designer.cs">
       <DependentUpon>TimkiemPhong.cs</DependentUpon>
     </Compile>
-    <Compile Include="TimkiemSV.cs">
+    <Compile Include="Form\TimkiemSV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TimkiemSV.Designer.cs">
+    <Compile Include="Form\TimkiemSV.Designer.cs">
       <DependentUpon>TimkiemSV.cs</DependentUpon>
     </Compile>
-    <Compile Include="Trangchu.cs">
+    <Compile Include="Form\Trangchu.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Trangchu.Designer.cs">
+    <Compile Include="Form\Trangchu.Designer.cs">
       <DependentUpon>Trangchu.cs</DependentUpon>
     </Compile>
-    <Compile Include="TraPhong.cs">
+    <Compile Include="Form\TraPhong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TraPhong.Designer.cs">
+    <Compile Include="Form\TraPhong.Designer.cs">
       <DependentUpon>TraPhong.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Home.resx">
+    <EmbeddedResource Include="Form\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HopDong.resx">
+    <EmbeddedResource Include="Form\HopDong.resx">
       <DependentUpon>HopDong.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="Form\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -145,34 +145,34 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="QliKTX.resx">
+    <EmbeddedResource Include="Form\QliKTX.resx">
       <DependentUpon>QliKTX.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="QliSV.resx">
+    <EmbeddedResource Include="Form\QliSV.resx">
       <DependentUpon>QliSV.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="QliThietBi.resx">
+    <EmbeddedResource Include="Form\QliThietBi.resx">
       <DependentUpon>QliThietBi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="QlyKhuNha.resx">
+    <EmbeddedResource Include="Form\QlyKhuNha.resx">
       <DependentUpon>QlyKhuNha.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ThuePhong.resx">
+    <EmbeddedResource Include="Form\ThuePhong.resx">
       <DependentUpon>ThuePhong.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TimKiem.resx">
+    <EmbeddedResource Include="Form\TimKiem.resx">
       <DependentUpon>TimKiem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TimkiemPhong.resx">
+    <EmbeddedResource Include="Form\TimkiemPhong.resx">
       <DependentUpon>TimkiemPhong.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TimkiemSV.resx">
+    <EmbeddedResource Include="Form\TimkiemSV.resx">
       <DependentUpon>TimkiemSV.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Trangchu.resx">
+    <EmbeddedResource Include="Form\Trangchu.resx">
       <DependentUpon>Trangchu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TraPhong.resx">
+    <EmbeddedResource Include="Form\TraPhong.resx">
       <DependentUpon>TraPhong.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

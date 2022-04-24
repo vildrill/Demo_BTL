@@ -37,7 +37,8 @@ namespace Demo_BTL
             sidepanel1.Height = Btn_TimKiem.Height;
             sidepanel1.Top = Btn_TimKiem.Top;
             sidepanel1.BackColor = Color.Teal;
-            
+            timkiem1.BringToFront();
+
         }
 
         private void Btn_Thuephong_Click(object sender, EventArgs e)

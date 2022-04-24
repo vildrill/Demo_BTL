@@ -43,11 +43,12 @@
             this.button4 = new System.Windows.Forms.Button();
             this.Btn_Dangxuat = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.trangchu1 = new Demo_BTL.Trangchu();
             this.thuePhong2 = new Demo_BTL.ThuePhong();
             this.qliKTX2 = new Demo_BTL.QliKTX();
             this.hopDong2 = new Demo_BTL.HopDong();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.timkiem1 = new Demo_BTL.Timkiem();
+            this.trangchu1 = new Demo_BTL.Trangchu();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -235,6 +236,7 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.trangchu1);
+            this.panel4.Controls.Add(this.timkiem1);
             this.panel4.Controls.Add(this.thuePhong2);
             this.panel4.Controls.Add(this.qliKTX2);
             this.panel4.Controls.Add(this.hopDong2);
@@ -243,17 +245,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1043, 450);
             this.panel4.TabIndex = 3;
-            // 
-            // trangchu1
-            // 
-            this.trangchu1.BackColor = System.Drawing.Color.IndianRed;
-            this.trangchu1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.trangchu1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.trangchu1.Location = new System.Drawing.Point(0, 0);
-            this.trangchu1.Margin = new System.Windows.Forms.Padding(5);
-            this.trangchu1.Name = "trangchu1";
-            this.trangchu1.Size = new System.Drawing.Size(1043, 450);
-            this.trangchu1.TabIndex = 4;
             // 
             // thuePhong2
             // 
@@ -278,6 +269,22 @@
             this.hopDong2.Name = "hopDong2";
             this.hopDong2.Size = new System.Drawing.Size(1044, 450);
             this.hopDong2.TabIndex = 0;
+            // 
+            // timkiem1
+            // 
+            this.timkiem1.Location = new System.Drawing.Point(3, 0);
+            this.timkiem1.Name = "timkiem1";
+            this.timkiem1.Size = new System.Drawing.Size(1044, 446);
+            this.timkiem1.TabIndex = 5;
+            // 
+            // trangchu1
+            // 
+            this.trangchu1.BackColor = System.Drawing.Color.IndianRed;
+            this.trangchu1.Location = new System.Drawing.Point(-1, 0);
+            this.trangchu1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.trangchu1.Name = "trangchu1";
+            this.trangchu1.Size = new System.Drawing.Size(1070, 446);
+            this.trangchu1.TabIndex = 6;
             // 
             // FormHome
             // 
@@ -324,8 +331,9 @@
         private ThuePhong thuePhong2;
         private QliKTX qliKTX2;
         private HopDong hopDong2;
-        private Trangchu trangchu1;
         private System.Windows.Forms.Button button4;
+        private Trangchu trangchu1;
+        private Timkiem timkiem1;
     }
 }
 

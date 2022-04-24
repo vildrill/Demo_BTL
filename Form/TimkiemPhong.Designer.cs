@@ -42,7 +42,7 @@
             // cbLoaiPhong
             // 
             this.cbLoaiPhong.FormattingEnabled = true;
-            this.cbLoaiPhong.Location = new System.Drawing.Point(134, 59);
+            this.cbLoaiPhong.Location = new System.Drawing.Point(116, 59);
             this.cbLoaiPhong.Name = "cbLoaiPhong";
             this.cbLoaiPhong.Size = new System.Drawing.Size(163, 24);
             this.cbLoaiPhong.TabIndex = 16;
@@ -78,7 +78,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(134, 136);
+            this.textBox4.Location = new System.Drawing.Point(116, 136);
             this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(252, 22);
@@ -89,9 +89,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(12, 137);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(119, 16);
+            this.label5.Size = new System.Drawing.Size(64, 16);
             this.label5.TabIndex = 18;
-            this.label5.Text = "Họ và tên sinh viên";
+            this.label5.Text = "Họ và tên";
             // 
             // btTimKiem
             // 
@@ -105,7 +105,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(134, 98);
+            this.radioButton1.Location = new System.Drawing.Point(116, 100);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(100, 20);
             this.radioButton1.TabIndex = 37;
