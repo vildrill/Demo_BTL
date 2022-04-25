@@ -54,3 +54,8 @@ C:\Users\admin\Desktop\Lap trinh truc quan\Demo_BTL\obj\Debug\Demo_BTL.Timkiem.r
 C:\Users\admin\Desktop\Lap trinh truc quan\Demo_BTL\obj\Debug\Demo_BTL.TimkiemPhong.resources
 C:\Users\admin\Desktop\Lap trinh truc quan\Demo_BTL\obj\Debug\Demo_BTL.TimkiemSV.resources
 C:\Users\admin\Desktop\Lap trinh truc quan\Demo_BTL\obj\Debug\Demo_BTL.TraPhong.resources
+C:\Users\admin\Desktop\Lap trinh truc quan\Demo_BTL\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\Lap trinh truc quan\Demo_BTL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\admin\Desktop\Lap trinh truc quan\Demo_BTL\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\Lap trinh truc quan\Demo_BTL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\admin\Desktop\Lap trinh truc quan\Demo_BTL\obj\Debug\Demo_BTL.csproj.CopyComplete

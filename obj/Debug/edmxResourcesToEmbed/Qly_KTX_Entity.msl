@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DemoKTModelStoreContainer" CdmEntityContainer="DemoKTEntities">
+    <EntitySetMapping Name="Accounts">
+      <EntityTypeMapping TypeName="DemoKTModel.Account">
+        <MappingFragment StoreEntitySet="Account">
+          <ScalarProperty Name="Account_id" ColumnName="Account_id" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Pass" ColumnName="Pass" />
+          <ScalarProperty Name="Account_type" ColumnName="Account_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Khoas">
+      <EntityTypeMapping TypeName="DemoKTModel.Khoa">
+        <MappingFragment StoreEntitySet="Khoa">
+          <ScalarProperty Name="Makhoa" ColumnName="Makhoa" />
+          <ScalarProperty Name="Tenkhoa" ColumnName="Tenkhoa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Khu_nha">
+      <EntityTypeMapping TypeName="DemoKTModel.Khu_nha">
+        <MappingFragment StoreEntitySet="Khu_nha">
+          <ScalarProperty Name="Ma_Nha" ColumnName="Ma_Nha" />
+          <ScalarProperty Name="Ten_Nha" ColumnName="Ten_Nha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lops">
+      <EntityTypeMapping TypeName="DemoKTModel.Lop">
+        <MappingFragment StoreEntitySet="Lop">
+          <ScalarProperty Name="Malop" ColumnName="Malop" />
+          <ScalarProperty Name="Tenlop" ColumnName="Tenlop" />
+          <ScalarProperty Name="Makhoa" ColumnName="Makhoa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Phongs">
+      <EntityTypeMapping TypeName="DemoKTModel.Phong">
+        <MappingFragment StoreEntitySet="Phong">
+          <ScalarProperty Name="Ma_Phong" ColumnName="Ma_Phong" />
+          <ScalarProperty Name="Ten_Phong" ColumnName="Ten_Phong" />
+          <ScalarProperty Name="Ma_Nha" ColumnName="Ma_Nha" />
+          <ScalarProperty Name="Loai_Phong" ColumnName="Loai_Phong" />
+          <ScalarProperty Name="So_Nguoi_Toi_Da" ColumnName="So_Nguoi_Toi_Da" />
+          <ScalarProperty Name="So_Nguoi_Dang_O" ColumnName="So_Nguoi_Dang_O" />
+          <ScalarProperty Name="Tien_Thue" ColumnName="Tien_Thue" />
+          <ScalarProperty Name="Ghi_Chu" ColumnName="Ghi_Chu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ques">
+      <EntityTypeMapping TypeName="DemoKTModel.Que">
+        <MappingFragment StoreEntitySet="Que">
+          <ScalarProperty Name="Maque" ColumnName="Maque" />
+          <ScalarProperty Name="Tenque" ColumnName="Tenque" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sinhviens">
+      <EntityTypeMapping TypeName="DemoKTModel.Sinhvien">
+        <MappingFragment StoreEntitySet="Sinhvien">
+          <ScalarProperty Name="Ma_sv" ColumnName="Ma_sv" />
+          <ScalarProperty Name="Ten_sv" ColumnName="Ten_sv" />
+          <ScalarProperty Name="Ngaysinh" ColumnName="Ngaysinh" />
+          <ScalarProperty Name="Gioitinh" ColumnName="Gioitinh" />
+          <ScalarProperty Name="Maque" ColumnName="Maque" />
+          <ScalarProperty Name="Makhoa" ColumnName="Makhoa" />
+          <ScalarProperty Name="Malop" ColumnName="Malop" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Thiet_Bi">
+      <EntityTypeMapping TypeName="DemoKTModel.Thiet_Bi">
+        <MappingFragment StoreEntitySet="Thiet_Bi">
+          <ScalarProperty Name="Ma_Thiet_Bi" ColumnName="Ma_Thiet_Bi" />
+          <ScalarProperty Name="Ten_Thiet_Bi" ColumnName="Ten_Thiet_Bi" />
+          <ScalarProperty Name="Gia_Tri" ColumnName="Gia_Tri" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Thuephongs">
+      <EntityTypeMapping TypeName="DemoKTModel.Thuephong">
+        <MappingFragment StoreEntitySet="Thuephong">
+          <ScalarProperty Name="Masothue" ColumnName="Masothue" />
+          <ScalarProperty Name="Ma_sv" ColumnName="Ma_sv" />
+          <ScalarProperty Name="Ma_Phong" ColumnName="Ma_Phong" />
+          <ScalarProperty Name="NgayBDau" ColumnName="NgayBDau" />
+          <ScalarProperty Name="Ngaykt" ColumnName="Ngaykt" />
+          <ScalarProperty Name="Ghichu" ColumnName="Ghichu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Thutienphongs">
+      <EntityTypeMapping TypeName="DemoKTModel.Thutienphong">
+        <MappingFragment StoreEntitySet="Thutienphong">
+          <ScalarProperty Name="Ma_Phong" ColumnName="Ma_Phong" />
+          <ScalarProperty Name="Thang" ColumnName="Thang" />
+          <ScalarProperty Name="Nam" ColumnName="Nam" />
+          <ScalarProperty Name="Tiennha" ColumnName="Tiennha" />
+          <ScalarProperty Name="Tiendien" ColumnName="Tiendien" />
+          <ScalarProperty Name="Tiennuoc" ColumnName="Tiennuoc" />
+          <ScalarProperty Name="Tienvesinh" ColumnName="Tienvesinh" />
+          <ScalarProperty Name="Tienphat" ColumnName="Tienphat" />
+          <ScalarProperty Name="Ngayhethan" ColumnName="Ngayhethan" />
+          <ScalarProperty Name="Ngaydong" ColumnName="Ngaydong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Thietbi_Phong">
+      <EntityTypeMapping TypeName="DemoKTModel.Thietbi_Phong">
+        <MappingFragment StoreEntitySet="Thietbi_Phong">
+          <ScalarProperty Name="Ma_Phong" ColumnName="Ma_Phong" />
+          <ScalarProperty Name="Ma_Thiet_Bi" ColumnName="Ma_Thiet_Bi" />
+          <ScalarProperty Name="So_Luong" ColumnName="So_Luong" />
+          <ScalarProperty Name="Tinh_Trang" ColumnName="Tinh_Trang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Traphongs">
+      <EntityTypeMapping TypeName="DemoKTModel.Traphong">
+        <MappingFragment StoreEntitySet="Traphong">
+          <ScalarProperty Name="Masothue" ColumnName="Masothue" />
+          <ScalarProperty Name="Ngaytra" ColumnName="Ngaytra" />
+          <ScalarProperty Name="Tienvipham" ColumnName="Tienvipham" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

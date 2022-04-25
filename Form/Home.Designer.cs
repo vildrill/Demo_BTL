@@ -43,12 +43,11 @@
             this.button4 = new System.Windows.Forms.Button();
             this.Btn_Dangxuat = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.trangchu1 = new Demo_BTL.Trangchu();
             this.thuePhong2 = new Demo_BTL.ThuePhong();
             this.qliKTX2 = new Demo_BTL.QliKTX();
             this.hopDong2 = new Demo_BTL.HopDong();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.timkiem1 = new Demo_BTL.Timkiem();
-            this.trangchu1 = new Demo_BTL.Trangchu();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -71,6 +70,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(245, 592);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // sidepanel1
             // 
@@ -128,7 +128,7 @@
             this.Btn_TimKiem.Name = "Btn_TimKiem";
             this.Btn_TimKiem.Size = new System.Drawing.Size(231, 64);
             this.Btn_TimKiem.TabIndex = 2;
-            this.Btn_TimKiem.Text = "Tìm kiếm";
+            this.Btn_TimKiem.Text = "Thông tin";
             this.Btn_TimKiem.UseVisualStyleBackColor = true;
             this.Btn_TimKiem.Click += new System.EventHandler(this.Btn_Timkiem_Click);
             // 
@@ -236,7 +236,6 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.trangchu1);
-            this.panel4.Controls.Add(this.timkiem1);
             this.panel4.Controls.Add(this.thuePhong2);
             this.panel4.Controls.Add(this.qliKTX2);
             this.panel4.Controls.Add(this.hopDong2);
@@ -245,6 +244,15 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1043, 450);
             this.panel4.TabIndex = 3;
+            // 
+            // trangchu1
+            // 
+            this.trangchu1.BackColor = System.Drawing.Color.IndianRed;
+            this.trangchu1.Location = new System.Drawing.Point(-1, 0);
+            this.trangchu1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.trangchu1.Name = "trangchu1";
+            this.trangchu1.Size = new System.Drawing.Size(1070, 446);
+            this.trangchu1.TabIndex = 6;
             // 
             // thuePhong2
             // 
@@ -270,22 +278,6 @@
             this.hopDong2.Size = new System.Drawing.Size(1044, 450);
             this.hopDong2.TabIndex = 0;
             // 
-            // timkiem1
-            // 
-            this.timkiem1.Location = new System.Drawing.Point(3, 0);
-            this.timkiem1.Name = "timkiem1";
-            this.timkiem1.Size = new System.Drawing.Size(1044, 446);
-            this.timkiem1.TabIndex = 5;
-            // 
-            // trangchu1
-            // 
-            this.trangchu1.BackColor = System.Drawing.Color.IndianRed;
-            this.trangchu1.Location = new System.Drawing.Point(-1, 0);
-            this.trangchu1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.trangchu1.Name = "trangchu1";
-            this.trangchu1.Size = new System.Drawing.Size(1070, 446);
-            this.trangchu1.TabIndex = 6;
-            // 
             // FormHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -299,6 +291,7 @@
             this.Name = "FormHome";
             this.Text = "Ký túc xá UTC";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormHome_FormClosed);
+            this.Load += new System.EventHandler(this.FormHome_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -333,7 +326,7 @@
         private HopDong hopDong2;
         private System.Windows.Forms.Button button4;
         private Trangchu trangchu1;
-        private Timkiem timkiem1;
+        
     }
 }
 

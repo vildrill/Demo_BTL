@@ -10,8 +10,10 @@ using System.Windows.Forms;
 
 namespace Demo_BTL
 {
+    
     public partial class QliSV : Form
     {
+        KetnoiDb conn = new KetnoiDb();
         public QliSV()
         {
             InitializeComponent();
@@ -20,6 +22,11 @@ namespace Demo_BTL
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btTimKiem_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

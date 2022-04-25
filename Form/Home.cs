@@ -37,7 +37,7 @@ namespace Demo_BTL
             sidepanel1.Height = Btn_TimKiem.Height;
             sidepanel1.Top = Btn_TimKiem.Top;
             sidepanel1.BackColor = Color.Teal;
-            timkiem1.BringToFront();
+          
 
         }
 
@@ -81,6 +81,16 @@ namespace Demo_BTL
         }
 
         private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void FormHome_Load(object sender, EventArgs e)
         {
 
         }

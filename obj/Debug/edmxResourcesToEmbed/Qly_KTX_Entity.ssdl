@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DemoKTModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="Account_id" />
+    </Key>
+    <Property Name="Account_id" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Username" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Pass" Type="nvarchar" MaxLength="1000" Nullable="false" />
+    <Property Name="Account_type" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Khoa">
+    <Key>
+      <PropertyRef Name="Makhoa" />
+    </Key>
+    <Property Name="Makhoa" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Tenkhoa" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Khu_nha">
+    <Key>
+      <PropertyRef Name="Ma_Nha" />
+    </Key>
+    <Property Name="Ma_Nha" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Ten_Nha" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Lop">
+    <Key>
+      <PropertyRef Name="Malop" />
+    </Key>
+    <Property Name="Malop" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Tenlop" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Makhoa" Type="nvarchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Phong">
+    <Key>
+      <PropertyRef Name="Ma_Phong" />
+    </Key>
+    <Property Name="Ma_Phong" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Ten_Phong" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Ma_Nha" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Loai_Phong" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="So_Nguoi_Toi_Da" Type="int" Nullable="false" />
+    <Property Name="So_Nguoi_Dang_O" Type="int" />
+    <Property Name="Tien_Thue" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Ghi_Chu" Type="text" />
+  </EntityType>
+  <EntityType Name="Que">
+    <Key>
+      <PropertyRef Name="Maque" />
+    </Key>
+    <Property Name="Maque" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Tenque" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sinhvien">
+    <Key>
+      <PropertyRef Name="Ma_sv" />
+    </Key>
+    <Property Name="Ma_sv" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Ten_sv" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Ngaysinh" Type="datetime" Nullable="false" />
+    <Property Name="Gioitinh" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Maque" Type="nvarchar" MaxLength="10" />
+    <Property Name="Makhoa" Type="nvarchar" MaxLength="10" />
+    <Property Name="Malop" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Thiet_Bi">
+    <Key>
+      <PropertyRef Name="Ma_Thiet_Bi" />
+    </Key>
+    <Property Name="Ma_Thiet_Bi" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Ten_Thiet_Bi" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="Gia_Tri" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DemoKT.dbo.Thietbi_Phong' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Thietbi_Phong">
+    <Key>
+      <PropertyRef Name="Ma_Phong" />
+      <PropertyRef Name="Ma_Thiet_Bi" />
+      <PropertyRef Name="Tinh_Trang" />
+    </Key>
+    <Property Name="Ma_Phong" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Ma_Thiet_Bi" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="So_Luong" Type="int" />
+    <Property Name="Tinh_Trang" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Thuephong">
+    <Key>
+      <PropertyRef Name="Masothue" />
+    </Key>
+    <Property Name="Masothue" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Ma_sv" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Ma_Phong" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="NgayBDau" Type="date" Nullable="false" />
+    <Property Name="Ngaykt" Type="date" Nullable="false" />
+    <Property Name="Ghichu" Type="text" />
+  </EntityType>
+  <EntityType Name="Thutienphong">
+    <Key>
+      <PropertyRef Name="Thang" />
+      <PropertyRef Name="Nam" />
+    </Key>
+    <Property Name="Ma_Phong" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Thang" Type="int" Nullable="false" />
+    <Property Name="Nam" Type="int" Nullable="false" />
+    <Property Name="Tiennha" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Tiendien" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Tiennuoc" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Tienvesinh" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Tienphat" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Ngayhethan" Type="date" Nullable="false" />
+    <Property Name="Ngaydong" Type="date" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DemoKT.dbo.Traphong' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Traphong">
+    <Key>
+      <PropertyRef Name="Masothue" />
+      <PropertyRef Name="Ngaytra" />
+    </Key>
+    <Property Name="Masothue" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Ngaytra" Type="date" Nullable="false" />
+    <Property Name="Tienvipham" Type="decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <Association Name="fk_khunha_phong">
+    <End Role="Khu_nha" Type="Self.Khu_nha" Multiplicity="1" />
+    <End Role="Phong" Type="Self.Phong" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Khu_nha">
+        <PropertyRef Name="Ma_Nha" />
+      </Principal>
+      <Dependent Role="Phong">
+        <PropertyRef Name="Ma_Nha" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_lop_makhoa">
+    <End Role="Khoa" Type="Self.Khoa" Multiplicity="1" />
+    <End Role="Lop" Type="Self.Lop" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Khoa">
+        <PropertyRef Name="Makhoa" />
+      </Principal>
+      <Dependent Role="Lop">
+        <PropertyRef Name="Makhoa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_sinhvien_makhoa">
+    <End Role="Khoa" Type="Self.Khoa" Multiplicity="0..1" />
+    <End Role="Sinhvien" Type="Self.Sinhvien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Khoa">
+        <PropertyRef Name="Makhoa" />
+      </Principal>
+      <Dependent Role="Sinhvien">
+        <PropertyRef Name="Makhoa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_sinhvien_malop">
+    <End Role="Lop" Type="Self.Lop" Multiplicity="0..1" />
+    <End Role="Sinhvien" Type="Self.Sinhvien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Lop">
+        <PropertyRef Name="Malop" />
+      </Principal>
+      <Dependent Role="Sinhvien">
+        <PropertyRef Name="Malop" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_sinhvien_maque">
+    <End Role="Que" Type="Self.Que" Multiplicity="0..1" />
+    <End Role="Sinhvien" Type="Self.Sinhvien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Que">
+        <PropertyRef Name="Maque" />
+      </Principal>
+      <Dependent Role="Sinhvien">
+        <PropertyRef Name="Maque" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_thietiphong_maphong">
+    <End Role="Phong" Type="Self.Phong" Multiplicity="1" />
+    <End Role="Thietbi_Phong" Type="Self.Thietbi_Phong" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Phong">
+        <PropertyRef Name="Ma_Phong" />
+      </Principal>
+      <Dependent Role="Thietbi_Phong">
+        <PropertyRef Name="Ma_Phong" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_thietiphong_mathietbi">
+    <End Role="Thiet_Bi" Type="Self.Thiet_Bi" Multiplicity="1" />
+    <End Role="Thietbi_Phong" Type="Self.Thietbi_Phong" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Thiet_Bi">
+        <PropertyRef Name="Ma_Thiet_Bi" />
+      </Principal>
+      <Dependent Role="Thietbi_Phong">
+        <PropertyRef Name="Ma_Thiet_Bi" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_thuephong_maphong">
+    <End Role="Phong" Type="Self.Phong" Multiplicity="1" />
+    <End Role="Thuephong" Type="Self.Thuephong" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Phong">
+        <PropertyRef Name="Ma_Phong" />
+      </Principal>
+      <Dependent Role="Thuephong">
+        <PropertyRef Name="Ma_Phong" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_thuephong_masv">
+    <End Role="Sinhvien" Type="Self.Sinhvien" Multiplicity="1" />
+    <End Role="Thuephong" Type="Self.Thuephong" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sinhvien">
+        <PropertyRef Name="Ma_sv" />
+      </Principal>
+      <Dependent Role="Thuephong">
+        <PropertyRef Name="Ma_sv" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_thutienphong_maphong">
+    <End Role="Phong" Type="Self.Phong" Multiplicity="1" />
+    <End Role="Thutienphong" Type="Self.Thutienphong" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Phong">
+        <PropertyRef Name="Ma_Phong" />
+      </Principal>
+      <Dependent Role="Thutienphong">
+        <PropertyRef Name="Ma_Phong" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_traphong_masothue">
+    <End Role="Thuephong" Type="Self.Thuephong" Multiplicity="1" />
+    <End Role="Traphong" Type="Self.Traphong" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Thuephong">
+        <PropertyRef Name="Masothue" />
+      </Principal>
+      <Dependent Role="Traphong">
+        <PropertyRef Name="Masothue" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DemoKTModelStoreContainer">
+    <EntitySet Name="Account" EntityType="Self.Account" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Khoa" EntityType="Self.Khoa" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Khu_nha" EntityType="Self.Khu_nha" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Lop" EntityType="Self.Lop" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Phong" EntityType="Self.Phong" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Que" EntityType="Self.Que" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sinhvien" EntityType="Self.Sinhvien" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Thiet_Bi" EntityType="Self.Thiet_Bi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Thuephong" EntityType="Self.Thuephong" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Thutienphong" EntityType="Self.Thutienphong" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Thietbi_Phong" EntityType="Self.Thietbi_Phong" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Thietbi_Phong].[Ma_Phong] AS [Ma_Phong], 
+    [Thietbi_Phong].[Ma_Thiet_Bi] AS [Ma_Thiet_Bi], 
+    [Thietbi_Phong].[So_Luong] AS [So_Luong], 
+    [Thietbi_Phong].[Tinh_Trang] AS [Tinh_Trang]
+    FROM [dbo].[Thietbi_Phong] AS [Thietbi_Phong]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Traphong" EntityType="Self.Traphong" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Traphong].[Masothue] AS [Masothue], 
+    [Traphong].[Ngaytra] AS [Ngaytra], 
+    [Traphong].[Tienvipham] AS [Tienvipham]
+    FROM [dbo].[Traphong] AS [Traphong]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="fk_khunha_phong" Association="Self.fk_khunha_phong">
+      <End Role="Khu_nha" EntitySet="Khu_nha" />
+      <End Role="Phong" EntitySet="Phong" />
+    </AssociationSet>
+    <AssociationSet Name="fk_lop_makhoa" Association="Self.fk_lop_makhoa">
+      <End Role="Khoa" EntitySet="Khoa" />
+      <End Role="Lop" EntitySet="Lop" />
+    </AssociationSet>
+    <AssociationSet Name="fk_sinhvien_makhoa" Association="Self.fk_sinhvien_makhoa">
+      <End Role="Khoa" EntitySet="Khoa" />
+      <End Role="Sinhvien" EntitySet="Sinhvien" />
+    </AssociationSet>
+    <AssociationSet Name="fk_sinhvien_malop" Association="Self.fk_sinhvien_malop">
+      <End Role="Lop" EntitySet="Lop" />
+      <End Role="Sinhvien" EntitySet="Sinhvien" />
+    </AssociationSet>
+    <AssociationSet Name="fk_sinhvien_maque" Association="Self.fk_sinhvien_maque">
+      <End Role="Que" EntitySet="Que" />
+      <End Role="Sinhvien" EntitySet="Sinhvien" />
+    </AssociationSet>
+    <AssociationSet Name="fk_thietiphong_maphong" Association="Self.fk_thietiphong_maphong">
+      <End Role="Phong" EntitySet="Phong" />
+      <End Role="Thietbi_Phong" EntitySet="Thietbi_Phong" />
+    </AssociationSet>
+    <AssociationSet Name="fk_thietiphong_mathietbi" Association="Self.fk_thietiphong_mathietbi">
+      <End Role="Thiet_Bi" EntitySet="Thiet_Bi" />
+      <End Role="Thietbi_Phong" EntitySet="Thietbi_Phong" />
+    </AssociationSet>
+    <AssociationSet Name="fk_thuephong_maphong" Association="Self.fk_thuephong_maphong">
+      <End Role="Phong" EntitySet="Phong" />
+      <End Role="Thuephong" EntitySet="Thuephong" />
+    </AssociationSet>
+    <AssociationSet Name="fk_thuephong_masv" Association="Self.fk_thuephong_masv">
+      <End Role="Sinhvien" EntitySet="Sinhvien" />
+      <End Role="Thuephong" EntitySet="Thuephong" />
+    </AssociationSet>
+    <AssociationSet Name="fk_thutienphong_maphong" Association="Self.fk_thutienphong_maphong">
+      <End Role="Phong" EntitySet="Phong" />
+      <End Role="Thutienphong" EntitySet="Thutienphong" />
+    </AssociationSet>
+    <AssociationSet Name="fk_traphong_masothue" Association="Self.fk_traphong_masothue">
+      <End Role="Thuephong" EntitySet="Thuephong" />
+      <End Role="Traphong" EntitySet="Traphong" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
