@@ -180,22 +180,25 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.panel3.Controls.Add(this.button4);
             this.panel3.Controls.Add(this.Btn_Dangxuat);
-            this.panel3.Location = new System.Drawing.Point(202, 0);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(648, 63);
+            this.panel3.Size = new System.Drawing.Size(764, 63);
             this.panel3.TabIndex = 2;
             // 
             // button4
             // 
+            this.button4.Dock = System.Windows.Forms.DockStyle.Left;
             this.button4.Enabled = false;
+            this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(18, 11);
+            this.button4.Location = new System.Drawing.Point(0, 0);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(125, 34);
+            this.button4.Size = new System.Drawing.Size(125, 63);
             this.button4.TabIndex = 7;
             this.button4.Text = "Quay lại";
             this.button4.UseVisualStyleBackColor = true;
@@ -203,15 +206,16 @@
             // 
             // Btn_Dangxuat
             // 
+            this.Btn_Dangxuat.Dock = System.Windows.Forms.DockStyle.Right;
             this.Btn_Dangxuat.FlatAppearance.BorderSize = 0;
             this.Btn_Dangxuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Dangxuat.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Dangxuat.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Btn_Dangxuat.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Dangxuat.Image")));
             this.Btn_Dangxuat.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Btn_Dangxuat.Location = new System.Drawing.Point(523, 9);
+            this.Btn_Dangxuat.Location = new System.Drawing.Point(648, 0);
             this.Btn_Dangxuat.Name = "Btn_Dangxuat";
-            this.Btn_Dangxuat.Size = new System.Drawing.Size(116, 39);
+            this.Btn_Dangxuat.Size = new System.Drawing.Size(116, 63);
             this.Btn_Dangxuat.TabIndex = 0;
             this.Btn_Dangxuat.Text = "Đăng xuất";
             this.Btn_Dangxuat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -222,7 +226,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.IndianRed;
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Location = new System.Drawing.Point(77, 3);
+            this.panel2.Location = new System.Drawing.Point(85, 3);
             this.panel2.Name = "panel2";
             this.panel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.panel2.Size = new System.Drawing.Size(160, 134);
@@ -239,8 +243,8 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.98548F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 73.01452F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.24424F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65.75577F));
             this.tableLayoutPanel1.Controls.Add(this.panel5, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel6, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -256,9 +260,9 @@
             // 
             this.panel5.Controls.Add(this.panel3);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(318, 3);
+            this.panel5.Location = new System.Drawing.Point(404, 3);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(850, 135);
+            this.panel5.Size = new System.Drawing.Size(764, 135);
             this.panel5.TabIndex = 5;
             // 
             // panel6
@@ -267,7 +271,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(3, 3);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(309, 135);
+            this.panel6.Size = new System.Drawing.Size(395, 135);
             this.panel6.TabIndex = 6;
             // 
             // hopDong2
