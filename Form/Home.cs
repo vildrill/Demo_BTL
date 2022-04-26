@@ -26,7 +26,7 @@ namespace Demo_BTL
             sidepanel1.Top = Btn_Qlyktx.Top;
             sidepanel1.BackColor = Color.Tomato;
             qliKTX2.BringToFront();
-           
+
 
         }
 
@@ -80,17 +80,7 @@ namespace Demo_BTL
                 Application.Exit();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void FormHome_Load(object sender, EventArgs e)
         {
 
         }

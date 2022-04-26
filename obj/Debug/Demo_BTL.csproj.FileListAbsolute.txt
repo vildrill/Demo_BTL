@@ -59,3 +59,29 @@ C:\Users\admin\Desktop\Lap trinh truc quan\Demo_BTL\bin\Debug\EntityFramework.Sq
 C:\Users\admin\Desktop\Lap trinh truc quan\Demo_BTL\bin\Debug\EntityFramework.xml
 C:\Users\admin\Desktop\Lap trinh truc quan\Demo_BTL\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\admin\Desktop\Lap trinh truc quan\Demo_BTL\obj\Debug\Demo_BTL.csproj.CopyComplete
+D:\C#\Demo_BTL\bin\Debug\Demo_BTL.exe.config
+D:\C#\Demo_BTL\bin\Debug\Demo_BTL.exe
+D:\C#\Demo_BTL\bin\Debug\Demo_BTL.pdb
+D:\C#\Demo_BTL\bin\Debug\EntityFramework.dll
+D:\C#\Demo_BTL\bin\Debug\EntityFramework.SqlServer.dll
+D:\C#\Demo_BTL\bin\Debug\EntityFramework.xml
+D:\C#\Demo_BTL\bin\Debug\EntityFramework.SqlServer.xml
+D:\C#\Demo_BTL\obj\Debug\Demo_BTL.csproj.AssemblyReference.cache
+D:\C#\Demo_BTL\obj\Debug\Demo_BTL.csproj.SuggestedBindingRedirects.cache
+D:\C#\Demo_BTL\obj\Debug\Demo_BTL.FormHome.resources
+D:\C#\Demo_BTL\obj\Debug\Demo_BTL.HopDong.resources
+D:\C#\Demo_BTL\obj\Debug\Demo_BTL.Login.resources
+D:\C#\Demo_BTL\obj\Debug\Demo_BTL.Properties.Resources.resources
+D:\C#\Demo_BTL\obj\Debug\Demo_BTL.QliKTX.resources
+D:\C#\Demo_BTL\obj\Debug\Demo_BTL.QliSV.resources
+D:\C#\Demo_BTL\obj\Debug\Demo_BTL.QliThietBi.resources
+D:\C#\Demo_BTL\obj\Debug\Demo_BTL.QlyKhuNha.resources
+D:\C#\Demo_BTL\obj\Debug\Demo_BTL.ThuePhong.resources
+D:\C#\Demo_BTL\obj\Debug\Demo_BTL.Trangchu.resources
+D:\C#\Demo_BTL\obj\Debug\Demo_BTL.TraPhong.resources
+D:\C#\Demo_BTL\obj\Debug\Demo_BTL.ThongTin.resources
+D:\C#\Demo_BTL\obj\Debug\Demo_BTL.csproj.GenerateResource.cache
+D:\C#\Demo_BTL\obj\Debug\Demo_BTL.csproj.CoreCompileInputs.cache
+D:\C#\Demo_BTL\obj\Debug\Demo_BTL.csproj.CopyComplete
+D:\C#\Demo_BTL\obj\Debug\Demo_BTL.exe
+D:\C#\Demo_BTL\obj\Debug\Demo_BTL.pdb
